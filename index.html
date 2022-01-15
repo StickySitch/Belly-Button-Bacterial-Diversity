@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bellyB.css"
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1 class="highlightme">Belly Button Biodiversity Dashboard</h1>
+        <p><span style="background-color: #00b7ff">Use the interactive charts below to explore the dataset</span></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <div id="bubble"></div>
+        <p>The data is all here! There are many different bacterias present in peoples belly buttons. In order the understand these bacteria we have created 3 charts! First, above is our guage chart representing the bacteria cultures per sample.
+          Below we have our horizontal bar chart and our guage. The guage is showing the frequincy in which a subject washed their belly button per week and our bar chart will show you the 10 most previlent bacterial species. With this data we can 
+          easily decide which bacterias would be best for growing meatless "meat".
+        </p>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-6">
+        <div id="gauge"></div>
+      </div>
+     
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="js/charts.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+.jumbotron {
+    background-image: url(../img/Navelgazing.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.jumbotron h1 {
+    color: azure;
+    text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
+}
+
+.jumbotron p {
+    color: azure;
+    text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
+}
+.highlightme { background-color:#00b7ff; 
+   
+}
